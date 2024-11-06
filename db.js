@@ -1,4 +1,3 @@
-// db.js
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
 
@@ -9,6 +8,7 @@ const connection = mysql.createConnection({
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
+  socketPath: process.env.SOCKET_PATH,
 });
 
 connection.connect((err) => {
