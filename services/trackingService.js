@@ -1,6 +1,12 @@
 import db from '../config/db.js';
 
-export const getAllData = () => {
+
+/**
+ * 
+ * Order Tracking Related Queries 
+ * 
+*/
+export const getAllTrackings = () => {
   return new Promise((resolve, reject) => {
     const query = 'SELECT * FROM your_table';
     db.query(query, (err, results) => {
@@ -12,3 +18,6 @@ export const getAllData = () => {
     });
   });
 };
+
+
+export const getSingleTracking = () => {}
