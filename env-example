@@ -1,10 +1,10 @@
 PORT=4000
+API_KEY=your_secure_api_key
 
-# Database connection data
+
+# Database connection data ( Needed before but no need to add now )
 DB_HOST=
 DB_USER=
 DB_PASSWORD=
 DB_NAME=
 SOCKET_PATH=
-
-API_KEY=your_secure_api_key

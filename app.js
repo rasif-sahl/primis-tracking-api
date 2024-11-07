@@ -13,7 +13,7 @@ app.use(cors({ origin: '*' })); // Adjust origin as needed for security
 app.use('/api', trackingRoutes);
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
