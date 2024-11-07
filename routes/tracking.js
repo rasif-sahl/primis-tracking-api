@@ -1,9 +1,10 @@
 import express from 'express';
-import { fetchData } from '../controllers/trackingController.js';
+import { getTrackingList, getSingleTrackingDetails } from '../controllers/trackingController.js';
 import { authenticateApiKey } from '../middleware/auth.js';
 
 const router = express.Router();
 
-router.get('/data', authenticateApiKey, fetchData);
+router.get('/tracking', authenticateApiKey, getTrackingList);
+router.get('/tracking/page/:id', authenticateApiKey, getSingleTrackingDetails);
 
 export default router;
